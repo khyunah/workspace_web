@@ -1,0 +1,48 @@
+a 태그는 하이퍼링크를 정의합니다. href 속성은 링크로 이동 페이지의 url을
+지정합니다.
+<a href="http://www.naver.com">네이버로 이동하기</a>
+tag에 추가적인 정보를 주는것을 attribute(속성)이라고 한다.
+
+<!-- 적을수는 있지만 브라우저는 이해 못한다. -->
+<h1 myNews="first Title">Title</h1>
+
+<!-- h1태그에 href 추가적인 정보를 추가하더라도 이해하지 못한다. -->
+<h1 href="http://www.naver.com">Title</h1>
+
+<!-- 올바른 태그를 올바른 위치에 작성해야 한다. -->
+<a href="http://www.naver.com" target="_self">네이버</a>
+<a href="http://www.naver.com" target="_blank">네이버</a>
+
+<!-- 셀프 클로징 태그 -->
+<!-- 표시할 콘텐트가 자기자신 -->
+<img
+  src="https://ssl.pstatic.net/tveta/libs/1382/1382386/d5b076b865c103426a3c_20220510173750210.png"
+/>
+
+<h1
+  src="https://ssl.pstatic.net/tveta/libs/1382/1382386/d5b076b865c103426a3c_20220510173750210.png"
+></h1>
+
+<img src="../img/logo.png" />
+
+<!-- 
+    절대경로 
+    파일 경로를 찾을 때 직접적인 경로를 그대로 적는 방식을 말한다. 
+    <img
+    src="https://ssl.pstatic.net/tveta/libs/1382/1382386/d5b076b865c103426a3c_20220510173750210.png"
+    />
+
+    <img src="c:devnote/image/logo/png"/>
+
+    상대경로
+    파일 경로를 찾을 때 경로를 찾는 파일의 기준으로 찾는 방식
+    예를 들어 home2.html 파일 안에 <img src="logo.png"/>
+
+    상대경로를 지정하는 방식
+    상위경로 로 이동 : .. 
+    예를 들면 html안에 ch01안에서 작업을 할때 html의 폴더에 파일을 들고올때 ..해주어야 한다.
+    
+    현재 폴더 : ./ 하거나 아무것도 적지 않으면 현재 폴더를 의미
+
+    하위 폴더 : 하위폴더명/ 
+ -->
