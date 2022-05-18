@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- 
+        form태그는 웹 페이지에서 입력 양식을 의미한다.
+        로그인 창이나 회원가입 폼 등이 이에 해당한다. 
+        텍스트필드에 글자를 입력하거나 체크박스, 라디오버튼 클릭하고 submit을 클릭하면 
+        백엔드 서버로 양식이 전달된다.
+        폼 전송방식 get, post
+     -->
+  </head>
+  <body>
+    <!-- form tag -->
+    <form action="">
+      <input type="text" />
+      <input type="color" />
+      <input type="checkbox" /><span>동의</span>
+      <input type="button" value="버튼1" />
+
+      <br />
+      <input type="text" placeholder="이름" disabled />
+      <br />
+      <input type="file" />
+      <input type="file" accept=".png, .jpg" />
+      <input type="file" accept=".pdf" />
+      <input type="file" accept="image/*" />
+      <!-- <input type="file" accept="image/*" /> 이미지타입 상관없이 사용가능  -->
+      <br />
+      <input type="text" required placeholder="아이디를 입력하세요." />
+      <!-- required
+    입력안한것을 입력하라고 알려주는 기능
+    -->
+      <br /><br />
+      <input type="submit" value="submit" />
+      <input type="password" required placeholder="비밀번호를 입력하세요." />
+    </form>
+  </body>
+</html>
