@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+        display: flex;
+        height: 100vh;
+        /* flex-direction : 기본 방향 row ㅡ> 주축 방향 설정 */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* flex-wrap: nowrap : 기본값 */
+        flex-wrap: wrap; /* 자동으로 정렬이 조정됨 */
+        /* flex-wrap: wrap-reverse; */
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+        color: aliceblue;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(24, 87, 66);
+      }
+      #second {
+        background-color: rgb(62, 156, 98);
+      }
+      /* 
+        flex 속성을 사용하고 싶다면 
+        부모 속성이  flex가 되면 된다. 
+      */
+    </style>
+  </head>
+  <body>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
+  </body>
+</html>
